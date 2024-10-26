@@ -5,22 +5,41 @@
     box-sizing: border-box;
 }
 
+.darkmode{
+    --navbar-color: #0D1B2A;
+    --navbartext-color: #E0E1DD;
+    --txt-color: black;
+    --bg-color: #36424F;
+    --primary-color: #0D1B2A;
+    --login-color: #A0A6AA;
+}
+
+:root{
+    --navbar-color: #0D1B2A;
+    --navbartext-color: #E0E1DD;
+    --txt-color: black;
+    --bg-color: #EEEEEC;
+    --primary-color: #0D1B2A;
+    --login-color: white;
+}
+
+
 body {
-    background-color: #e9c46a;
+    background-color: var(--bg-color);
     text-align: center;
     min-height: 100vh;
-    flex-direction: column; /* Dodano, aby umożliwić układ pionowy */
-    justify-content: center; /* Wyśrodkowanie w pionie */
+    flex-direction: column;
+    justify-content: center;
 }
 
 .navbar {
     margin-top: 0;
-    width: 100%; /* Upewnia się, że navbar zajmuje całą szerokość */
+    width: 100%; 
 }
 
 .navbar ul {
     list-style-type: none;
-    background-color: #264653;
+    background-color: var(--navbar-color);
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -28,10 +47,9 @@ body {
 }
 
 .logo img {
-    height: 80px;
+    height: 40px;
 }
 
-/* Pole wyszukiwania */
 .search-container {
     display: flex;
     align-items: center;
@@ -55,27 +73,22 @@ body {
 .search-container button {
     background: none;
     border: none;
-    color: #264653;
+    color: var(--bg-color);
     font-size: 16px;
     cursor: pointer;
-}
-
-.search-container button:hover {
-    color: #2a9d8f;
 }
 
 .search-container input::placeholder {
     color: #666;
 }
 
-/* Linki nawigacyjne */
 .nav-links {
     display: flex;
     gap: 20px;
 }
 
 .navbar a {
-    color: #e9c46a;
+    color: var(--navbartext-color);
     text-decoration: none;
     padding: 10px 15px;
     display: block;
@@ -89,7 +102,6 @@ body {
     text-decoration: none;
 }
 
-/* Stylizacja przycisku logowania */
 .login {
     margin-left: auto;
 }
@@ -106,13 +118,11 @@ body {
 }
 
 .login-button i {
-    color: #e9c46a;
     margin-right: 8px;
     font-size: 18px;
 }
 
 .login-button a {
-    color: #e9c46a;
     text-decoration: none;
     font-weight: bold;
 }
@@ -126,12 +136,12 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 440px;
-    height: auto; /* Ustawiono na auto, aby dostosować się do zawartości */
+    height: auto; 
     padding: 30px;
-    background-color: white; /* Dodano tło, aby wyróżnić sekcję */
-    border-radius: 10px; /* Dodano zaokrąglenie rogów */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Dodano cień */
-    margin: 80px auto; /* Wyśrodkowanie formularza poziomo */
+    background-color: var(--login-color); 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    margin: 80px auto; 
     
 }
 
@@ -141,7 +151,7 @@ body {
 }
 
 .login-header header {
-    color: #264653;
+    color: var(--txt-color);
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -164,11 +174,11 @@ body {
 
 ::placeholder {
     font-weight: 500;
-    color: black; 
+    color: var(--txt-color); 
 }
 
 .input-field:focus {
-    border: 2px solid #264653; /* Zmiana koloru ramki na focus */
+    border: 2px solid #264653;
 }
 
 .forgot {
@@ -181,7 +191,7 @@ section {
     display: flex;
     align-items: center;
     font: 14px;
-    color: black;
+    color: var(--txt-color);
 }
 
 #check {
@@ -197,7 +207,7 @@ a:hover {
 }
 
 section a {
-    color: black;
+    color: var(--txt-color);
 }
 
 .input-submit {
@@ -207,7 +217,7 @@ section a {
 .submit-btn {
     width: 100%;
     height: 60px;
-    background: #264653;
+    background: var(--primary-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -218,7 +228,7 @@ section a {
     position: absolute;
     top: 45%;
     left: 50%;
-    color: #e9c46a;
+    color: #E0E1DD;
     font-weight: 600;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -235,6 +245,8 @@ section a {
 }
 
 .sign-up-link a {
-    color: black;
+    color: var(--txt-color);
     font-weight: 600;
 }
+
+
