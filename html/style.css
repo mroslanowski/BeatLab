@@ -144,7 +144,9 @@ body {
     color: #264653;
     font-size: 30px;
     font-weight: 600;
+    margin-bottom: 10px;
 }
+
 
 .input-field {
     width: 100%;
@@ -158,6 +160,7 @@ body {
     outline: none;
     transition: 0.3s;
 }
+
 
 ::placeholder {
     font-weight: 500;
