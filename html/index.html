@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MovieLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS2h/Kw1vZ38aCT3Nv6gCjr3pjyYfiu5jEr9a0ayjyWvZF5ckE5" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ce8989e355.js" crossorigin="anonymous"></script>
+</head>
+<body>        
+    <nav class="navbar">
+        <ul>
+            <li class="logo">
+                <img src="logo.jpg" alt="logo">
+            </li>
+            <div class="search-container">
+                <input type="text" placeholder="Szukaj">
+                <button id="search-button"><i class="fa-solid fa-magnifying-glass" style="color: #1a2e35;"></i></button>
+            </div>
+            
+            <li><a href="filmy.html">FILMY</a></li>
+            <li><a href="dodajfilm.html">DODAJ FILM</a></li>
+            <li><a href="ranking.html">RANKING</a></li>
+            <li><a href="premiery.html">PREMIERY</a></li>
+            
+            <li class="login">
+                <button class="login-button">
+                    <i class="fa-regular fa-user"></i>
+                    <a href="login.html">ZALOGUJ SIĘ</a>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sekcja logowania -->
+    <div class="login-box">
+        <div class="login-header">
+            <header>Zaloguj się</header>
+        </div>
+        <form>
+            <input type="text" class="input-field" placeholder="Email" required>
+            <input type="password" class="input-field" placeholder="Hasło" required>
+            <div class="input-submit">
+                <button type="submit" class="submit-btn">Zaloguj się</button>
+            </div>
+            <div class="sign-up-link">
+                <p>Nie masz konta? <a href="register.html">Zarejestruj się</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MovieLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS2h/Kw1vZ38aCT3Nv6gCjr3pjyYfiu5jEr9a0ayjyWvZF5ckE5" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ce8989e355.js" crossorigin="anonymous"></script>
+</head>
+<body>        
+    <nav class="navbar">
+        <ul>
+            <li class="logo">
+                <img src="logo.jpg" alt="logo">
+            </li>
+            <div class="search-container">
+                <input type="text" placeholder="Szukaj">
+                <button id="search-button"><i class="fa-solid fa-magnifying-glass" style="color: #1a2e35;"></i></i></button>
+            </div>
+            
+            <li><a href="filmy.html">FILMY</a></li>
+            <li><a href="dodajfilm.html">DODAJ FILM</a></li>
+            <li><a href="ranking.html">RANKING</a></li>
+            <li><a href="premiery.html">PREMIERY</a></li>
+            
+            <button class="login-button">
+                <i class="fa-regular fa-user"></i>
+                <a href="login.html">ZALOGUJ SIĘ</a>
+            </button>
+        </ul>
+    </nav>
+    <div class="login-box">
+        <div class="login-header">
+            <header>Logowanie</header>
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
+        </div>
+        <div class="input-box">
+            <input type="password" class="input-field" placeholder="Hasło" autocomplete="off" required>
+        </div>
+        <div class="forgot">
+            <section>
+                <input type="checkbox" id="check">
+                <label for="check">Zapamiętaj hasło</label>
+            </section>
+            <section>
+                <a href="login.html">Zapomnniałeś hasła?</a>
+            </section>
+        </div>
+        <div class="input-submit">
+            <button class="submit-btn" id="submit"></button>
+            <label for="submit">Zaloguj się</label>
+        </div>
+        <div class="sign-up-link">
+            <p>Pierwszy raz? <a href="register.html">Załóż konto</a></p>
+        </div>
+    </div>
+</body>
+</html>

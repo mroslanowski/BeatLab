@@ -1,0 +1,237 @@
+* {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9c46a;
+    text-align: center;
+    min-height: 100vh;
+    flex-direction: column; /* Dodano, aby umożliwić układ pionowy */
+    justify-content: center; /* Wyśrodkowanie w pionie */
+}
+
+.navbar {
+    margin-top: 0;
+    width: 100%; /* Upewnia się, że navbar zajmuje całą szerokość */
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: #264653;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 80px;
+}
+
+/* Pole wyszukiwania */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    color: #264653;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    color: #2a9d8f;
+}
+
+.search-container input::placeholder {
+    color: #666;
+}
+
+/* Linki nawigacyjne */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #e9c46a;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar a:hover {
+    transform: scale(1.05, 1);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Stylizacja przycisku logowania */
+.login {
+    margin-left: auto;
+}
+
+.login-button {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.login-button i {
+    color: #e9c46a;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.login-button a {
+    color: #e9c46a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    text-decoration: none;
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 440px;
+    height: auto; /* Ustawiono na auto, aby dostosować się do zawartości */
+    padding: 30px;
+    background-color: white; /* Dodano tło, aby wyróżnić sekcję */
+    border-radius: 10px; /* Dodano zaokrąglenie rogów */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Dodano cień */
+    margin: 80px auto; /* Wyśrodkowanie formularza poziomo */
+    
+}
+
+.login-header {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.login-header header {
+    color: #264653;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.input-field {
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: 0.3s;
+}
+
+::placeholder {
+    font-weight: 500;
+    color: black; 
+}
+
+.input-field:focus {
+    border: 2px solid #264653; /* Zmiana koloru ramki na focus */
+}
+
+.forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    font: 14px;
+    color: black;
+}
+
+#check {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section a {
+    color: black;
+}
+
+.input-submit {
+    position: relative;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 60px;
+    background: #264653;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-submit label {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #e9c46a;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    transform: scale(1.02, 1);
+}
+
+.sign-up-link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sign-up-link a {
+    color: black;
+    font-weight: 600;
+}
