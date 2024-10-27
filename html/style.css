@@ -14,6 +14,10 @@
     --login-color: #A0A6AA;
 }
 
+.language{
+
+}
+
 :root{
     --navbar-color: #0D1B2A;
     --navbartext-color: #E0E1DD;
@@ -28,8 +32,6 @@ body {
     background-color: var(--bg-color);
     text-align: center;
     min-height: 100vh;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .navbar {
@@ -248,5 +250,67 @@ section a {
     color: var(--txt-color);
     font-weight: 600;
 }
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 5px;
+    background-color: var(--navbar-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    bottom: 20px;
+    right: 20px; 
+    cursor: pointer; 
+}
+
+#theme-switch svg{ 
+    fill: var(--bg-color);    
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+.darkmode #theme-switch svg:last-child{
+    display: block;
+    
+}
+#language-switch {
+    height: 38px;
+    width: 50px;
+    padding: 0;
+    border-radius: 5px;
+    background-color: var(--navbar-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    bottom: 80px;
+    right: 20px; 
+    cursor: pointer; 
+}
+
+#language-switch svg{ 
+    border-radius: 5%; 
+}
+
+#language-switch svg:last-child{
+    display: none;
+}
+
+.language-pl #language-switch svg:first-child{
+    display: none;
+}
+.language-pl #language-switch svg:last-child{
+    display: block;
+}
+
+
 
 
